@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Memory Game</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <h1>Simon Game!</h1>
+    
+    <p>
+      Welcome to the game! Repeat back the pattern by clicking the buttons.
+      You have up to 3 strikes allowed.
+    </p>
+    
+    <div id="strikesArea">
+      <div id="strikeTxt" class="hidden">Strikes:</div>
+      <img 
+        id="strike1"
+        class="hidden"
+        src="https://cdn.glitch.com/cb33ca9c-ff05-4e0d-bcb0-c285f292f237%2Fstrike.png?v=1616574796781"
+        />
+      <img 
+        id="strike2"
+        class="hidden"
+        src="https://cdn.glitch.com/cb33ca9c-ff05-4e0d-bcb0-c285f292f237%2Fstrike.png?v=1616574796781"
+        />
+    </div>
+    
+
+    <button id="startBtn" onclick="startGame()">Start</button>
+    <button id="stopBtn" class="hidden" onclick="stopGame()">Stop</button>
+
+    <div id="gameButtonArea">
+      <button
+        id="button1"
+        onclick="guess(1)"
+        onmousedown="startTone(1);showImg(1)"
+        onmouseup="stopTone();hideImg(1)"
+      >
+        <img
+          id="imgBtn1"
+          class="hidden"
+          src="https://cdn.glitch.com/cb33ca9c-ff05-4e0d-bcb0-c285f292f237%2Ftriangle.png?v=1616192347229"
+          alt="triangle button"
+        />
+        <img
+          id="blankImgBtn1"
+          src="https://cdn.glitch.com/cb33ca9c-ff05-4e0d-bcb0-c285f292f237%2Fblank.png?v=1616571920156"
+        />
+      </button>
+      <button
+        id="button2"
+        onclick="guess(2)"
+        onmousedown="startTone(2);showImg(2)"
+        onmouseup="stopTone();hideImg(2)"
+      >
+        <img
+          id="imgBtn2"
+          class="hidden"
+          src="https://cdn.glitch.com/cb33ca9c-ff05-4e0d-bcb0-c285f292f237%2Fsquare.png?v=1616192336900"
+          alt="square button"
+        />
+        <img
+          id="blankImgBtn2"
+          src="https://cdn.glitch.com/cb33ca9c-ff05-4e0d-bcb0-c285f292f237%2Fblank.png?v=1616571920156"
+        />
+      </button>
+      <button
+        id="button3"
+        onclick="guess(3)"
+        onmousedown="startTone(3);showImg(3)"
+        onmouseup="stopTone();hideImg(3)"
+      >
+        <img
+          id="imgBtn3"
+          class="hidden"
+          src="https://cdn.glitch.com/cb33ca9c-ff05-4e0d-bcb0-c285f292f237%2Fcircle.png?v=1616192355729"
+          alt="circle button"
+        />
+        <img
+          id="blankImgBtn3"
+          src="https://cdn.glitch.com/cb33ca9c-ff05-4e0d-bcb0-c285f292f237%2Fblank.png?v=1616571920156"
+        />
+      </button>
+      <button
+        id="button4"
+        onclick="guess(4)"
+        onmousedown="startTone(4);showImg(4)"
+        onmouseup="stopTone();hideImg(4)"
+      >
+        <img
+          id="imgBtn4"
+          class="hidden"
+          src="https://cdn.glitch.com/cb33ca9c-ff05-4e0d-bcb0-c285f292f237%2Fstar.png?v=1616192328824"
+          alt="star button"
+        />
+        <img
+          id="blankImgBtn4"
+          src="https://cdn.glitch.com/cb33ca9c-ff05-4e0d-bcb0-c285f292f237%2Fblank.png?v=1616571920156"
+        />
+      </button>
+    </div>
+  </body>
+</html>
