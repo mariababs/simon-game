@@ -39,7 +39,7 @@ The following **additional** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
-![](simon-game.gif)
+![](.glitch-assets/simon-game.gif)
 
 
 ## Reflection Questions
