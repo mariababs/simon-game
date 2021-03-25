@@ -152,10 +152,10 @@ function generatePattern(){
 
 // Sound Synthesis Functions
 const freqMap = {
-  1: 261.6,
-  2: 329.6,
-  3: 392,
-  4: 466.2
+  1: 659.25,
+  2: 329.63,
+  3: 622.25,
+  4: 311.13
 }
 function playTone(btn,len){ 
   o.frequency.value = freqMap[btn]
